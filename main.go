@@ -1,7 +1,9 @@
 package main
 
-import "goperspektif/pointer"
+import (
+	"goperspektif/server"
+)
 
 func main() {
-	pointer.PaFer()
+	server.GetObjectJson()
 }

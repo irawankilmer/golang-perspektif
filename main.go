@@ -1,9 +1,13 @@
 package main
 
 import (
-	"goperspektif/looping"
+	"goperspektif/goroutine"
+	"time"
 )
 
 func main() {
-	looping.LoopEmpat()
+	go goroutine.RoutineSatu()
+	go goroutine.RoutineDua()
+
+	time.Sleep(2 * time.Second)
 }

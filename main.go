@@ -1,13 +1,7 @@
 package main
 
-import (
-	"goperspektif/goroutine"
-	"time"
-)
+import "goperspektif/goroutine"
 
 func main() {
-	go goroutine.RoutineSatu()
-	go goroutine.RoutineDua()
-
-	time.Sleep(2 * time.Second)
+	goroutine.Rpanggil()
 }
